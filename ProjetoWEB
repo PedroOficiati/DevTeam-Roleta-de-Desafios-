@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta de Desafios</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sorteios</a>
+            <a href="#">Ranking</a>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <section>
+            <h1>DESAFIOS <br> ALEATÓRIOS</h1>
+            
+            <!-- Imagem da Roleta (Banner) -->
+            <div>
+                <img src="roleta.png" alt="Roleta de desafios">
+            </div>
+        </section>
+
+        <!-- Cards para escolher tipo de roleta -->
+        <section>
+            <div>
+                <h2>ALEATÓRIO</h2>
+                <img src="roleta-card.png" alt="Roleta Aleatória">
+                <button>JOGAR</button>
+            </div>
+
+            <div>
+                <h2>CATEGORIA</h2>
+                <img src="categoria-card.png" alt="Roleta por Categoria">
+                <button>JOGAR</button>
+            </div>
+        </section>
+    </main
+
+</body>
+</html>
