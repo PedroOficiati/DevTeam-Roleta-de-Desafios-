@@ -1,0 +1,232 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da Página */
+body {
+    background-color: #002855;
+    color: white;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d6801a;
+    padding: 0;
+}
+
+header img {
+    height: 100px;
+    width: 500px;
+}
+
+/* Layout Principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+/* Cards (esquerda) */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    width: auto;
+}
+
+/* Estilização dos Cards */
+.card {
+    background-color: #d6801a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Imagem dentro dos cards */
+.card-image img {
+    height: 130px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+/* Centraliza o botão "JOGAR" corretamente */
+.card button {
+    width: 80%;
+    height: 40px; /* Define uma altura fixa para uniformidade */
+    align-self: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.categorias-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px; 
+    margin-top: 10px; 
+    overflow: hidden; 
+}
+
+.categorias-container button {
+    width: 90%; 
+    height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categorias-container button:hover {
+    background-color: darkred;
+}
+
+/* Roleta à direita */
+.roleta-container {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-right: 220px;
+}
+
+/* Ponteiro da roleta (sempre visível) */
+.ponteiro {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 40px;
+    background: black;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 10;
+}
+
+/* Roleta com um design mais bonito */
+.roleta {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    background: conic-gradient(
+        #ff0000 0deg 60deg,
+        #0000ff 60deg 120deg,
+        #008000 120deg 180deg,
+        #ffff00 180deg 240deg,
+        #800080 240deg 300deg,
+        #ffa500 300deg 360deg
+    );
+    transition: transform 4s ease-out;
+    transform-origin: center;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roleta-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .roleta-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .roleta {
+        width: 250px;
+        height: 250px;
+    }
+
+    .ponteiro {
+        width: 15px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card button {
+        width: 90%;
+    }
+
+    .roleta {
+        width: 200px;
+        height: 200px;
+    }
+}
