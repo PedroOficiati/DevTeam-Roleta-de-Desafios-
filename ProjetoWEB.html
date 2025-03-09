@@ -1,46 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roleta de Desafios</title>
+    <link rel="stylesheet" href="subteste.css">
 </head>
 <body>
+
     <!-- Cabeçalho -->
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Login</a>
-            <a href="#">Sugestões</a>
-        </nav>
+        <img src="logo.png" alt="Logo Desafios" class="logo">
     </header>
 
-    <!-- Seção Principal -->
-    <main>
-        <section>
-            <h1>DESAFIOS <br> ALEATÓRIOS</h1>
-            
-            <!-- Imagem da Roleta (Banner) -->
-            <div>
-                <img src="roleta.png" alt="Roleta de desafios">
-            </div>
-        </section>
-
-        <!-- Cards para escolher tipo de roleta -->
-        <section>
-            <div>
+    <!-- Contêiner principal -->
+    <main class="container">
+        <!-- Cards à esquerda -->
+        <section class="cards-container">
+            <!-- Card Aleatório -->
+            <article class="card">
                 <h2>ALEATÓRIO</h2>
-                <img src="roleta-card.png" alt="Roleta Aleatória">
-                <button>JOGAR</button>
-            </div>
+                <section class="card-image">
+                    <img src="dado2b.jpg" alt="Roleta Aleatória">
+                </section>
+                <button id="botaoAleatorio">JOGAR</button>
+            </article>
 
-            <div>
+            <!-- Card Categoria -->
+            <article class="card">
                 <h2>CATEGORIA</h2>
-                <img src="categoria-card.png" alt="Roleta por Categoria">
-                <button>JOGAR</button>
-            </div>
+                <section class="card-image">
+                    <img src="roleta2b.jpg" alt="Roleta por Categoria">
+                </section>
+                <button id="botaoCategoria">JOGAR</button>
+                <aside id="categoriasContainer" class="categorias-container"></div>
+            </article>
         </section>
-    </main
 
+        <!-- Roleta à direita -->
+        <section class="roleta-container">
+            <aside class="ponteiro"></aside>
+            <article class="roleta" id="roleta"></article>
+            <p class="resultado" id="resultado"></p>
+        </section>
+    </main>
+
+    <script src="subteste.js"></script>
 </body>
 </html>
