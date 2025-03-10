@@ -1,4 +1,4 @@
-/* Reset Básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@
     font-family: Arial, sans-serif;
 }
 
-/* Corpo da Página */
+
 body {
     background-color: #002855;
     color: white;
     text-align: center;
 }
 
-/* Cabeçalho */
+
 header {
     background-color: #d6801a;
     padding: 0;
@@ -24,7 +24,7 @@ header img {
     width: 500px;
 }
 
-/* Layout Principal */
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -33,14 +33,14 @@ header img {
     margin-top: 50px;
 }
 
-/* Cards (esquerda) */
+
 .cards-container {
     display: flex;
     gap: 20px;
     width: auto;
 }
 
-/* Estilização dos Cards */
+
 .card {
     background-color: #d6801a;
     padding: 20px;
@@ -54,17 +54,17 @@ header img {
     justify-content: space-between;
 }
 
-/* Imagem dentro dos cards */
+
 .card-image img {
     height: 130px;
     width: 130px;
     border-radius: 10px;
 }
 
-/* Centraliza o botão "JOGAR" corretamente */
+
 .card button {
     width: 80%;
-    height: 40px; /* Define uma altura fixa para uniformidade */
+    height: 40px; 
     align-self: center;
     text-align: center;
     display: flex;
@@ -109,7 +109,7 @@ button:hover {
     background-color: darkred;
 }
 
-/* Roleta à direita */
+
 .roleta-container {
     position: relative;
     width: 300px;
@@ -122,7 +122,7 @@ button:hover {
     margin-right: 220px;
 }
 
-/* Ponteiro da roleta (sempre visível) */
+
 .ponteiro {
     position: absolute;
     top: -10px;
@@ -135,7 +135,7 @@ button:hover {
     z-index: 10;
 }
 
-/* Roleta com um design mais bonito */
+
 .roleta {
     width: 300px;
     height: 300px;
@@ -154,7 +154,7 @@ button:hover {
     transform-origin: center;
 }
 
-/* Media Queries para Responsividade */
+
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
