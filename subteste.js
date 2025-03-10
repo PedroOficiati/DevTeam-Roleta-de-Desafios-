@@ -45,16 +45,16 @@ document.getElementById("botaoAleatorio").addEventListener("click", () => {
     iniciarRoleta(categoriaAleatoria);
 });
 
-let anguloAtual = 0; // Mantém o estado correto da rotação
+let anguloAtual = 0; 
 
 function girarRoleta(callback) {
     const roleta = document.getElementById("roleta");
     const novaRotacao = 3600 + Math.random() * 360;
 
-    anguloAtual += novaRotacao; // Garante continuidade fluida da animação
+    anguloAtual += novaRotacao; 
 
-    roleta.style.transition = "none"; // Reseta animação para evitar comportamento errático
-    roleta.style.transform = `rotate(${anguloAtual % 360}deg)`; // Reseta para dentro do ciclo
+    roleta.style.transition = "none"; 
+    roleta.style.transform = `rotate(${anguloAtual % 360}deg)`; 
     setTimeout(() => {
         roleta.style.transition = "transform 4s cubic-bezier(0.17, 0.67, 0.83, 0.67)";
         roleta.style.transform = `rotate(${anguloAtual}deg)`;
