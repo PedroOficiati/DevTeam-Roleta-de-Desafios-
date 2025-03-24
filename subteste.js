@@ -94,12 +94,12 @@ function girarRoleta(callback) {
 function categoriaPorAngulo(angulo) {
     angulo = angulo % 360;
 
-    if (angulo >= 0 && angulo <= 60) return "Físico";     
+    if (angulo >= 0 && angulo <= 60) return "Inteligente";     
     if (angulo > 60 && angulo <= 120) return "Engraçado";    
-    if (angulo > 120 && angulo <= 180) return "Inteligente";     
-    if (angulo > 180 && angulo <= 240) return "Físico";      
+    if (angulo > 120 && angulo <= 180) return "Físico";     
+    if (angulo > 180 && angulo <= 240) return "Inteligente";      
     if (angulo > 240 && angulo <= 300) return "Engraçado";   
-    if (angulo > 300 && angulo < 360) return "Inteligente";    
+    if (angulo > 300 && angulo < 360) return "Físico";
 
     return "Físico";
 }
