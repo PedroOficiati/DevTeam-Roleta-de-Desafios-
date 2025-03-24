@@ -9,16 +9,12 @@
 </head>
 <body>
 
-
     <header>
         <img src="logo.png" alt="Logo Desafios" class="logo">
     </header>
 
-
     <main class="container">
-        
         <section class="cards-container">
-          
             <article class="card">
                 <h2>ALEATÓRIO</h2>
                 <section class="card-image">
@@ -27,7 +23,6 @@
                 <button id="botaoAleatorio">JOGAR</button>
             </article>
 
-      
             <article class="card">
                 <h2>CATEGORIA</h2>
                 <section class="card-image">
@@ -38,13 +33,26 @@
             </article>
         </section>
 
-
-        <section class="roleta-container">
-            <aside class="ponteiro"></aside>
-            <article class="roleta" id="roleta"></article>
-            <p class="resultado" id="resultado"></p>
+        <section class="box-roleta-legenda">
+            <article class="roleta-container">
+                <aside class="ponteiro"></aside>
+                <article class="roleta" id="roleta"></article>
+                <p class="resultado" id="resultado"></p>
+            </article>
+        
+            <section class="legenda-roleta">
+                <h3>Legenda de Cores da Roleta</h3>
+                <ul>
+                    <li><span class="cor legenda-vermelho"></span> Físico</li>
+                    <li><span class="cor legenda-azul"></span> Engraçado</li>
+                    <li><span class="cor legenda-verde"></span> Inteligente</li>
+                    <li><span class="cor legenda-amarelo"></span> Físico</li>
+                    <li><span class="cor legenda-roxo"></span> Engraçado</li>
+                    <li><span class="cor legenda-laranja"></span> Inteligente</li>
+                </ul>
+            </section>
         </section>
-    </main>
+        
 
     <script src="subteste.js"></script>
 </body>
