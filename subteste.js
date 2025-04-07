@@ -5,7 +5,12 @@ const desafios = {
         "Ficar em prancha por 20 segundos",
         "Correr no lugar por 1 minuto",
         "Fazer 5 flexões",
-        "Pular em um pé só por 30 segundos"
+        "Pular em um pé só por 30 segundos",
+        "Fazer 10 agachamentos",
+        "Equilibrar-se com um pé só por 15 segundos",
+        "Fingir que está nadando por 20 segundos",
+        "Imitar um robô dançando",
+        "Fazer uma corrida até a parede e voltar"
     ],
     "Engraçado": [
         "Contar uma piada sem rir",
@@ -13,7 +18,12 @@ const desafios = {
         "Falar como um robô por 1 minuto",
         "Imitar um animal",
         "Fingir que está em câmera lenta",
-        "Fazer uma dancinha engraçada"
+        "Fazer uma dança engraçada",
+        "Inventar uma palavra e dar um significado para ela",
+        "Imitar uma celebridade ou personagem",
+        "Dançar sem música por 20 segundos",
+        "Fingir que está chorando dramaticamente",
+        "Fingir que é um apresentador de TV"
     ],
     "Inteligente": [
         "Resolver um enigma",
@@ -21,7 +31,11 @@ const desafios = {
         "Fazer uma conta de cabeça difícil",
         "Falar 5 capitais do mundo",
         "Criar uma rima com a palavra 'foco'",
-        "Fazer um trava-língua 3 vezes seguidas"
+        "Fazer um trava-língua 3 vezes seguidas",
+        "Dizer o nome de 3 filmes com a letra B",
+        "Falar 5 palavras que rimam com 'bola'",
+        "Resolver uma conta difícil que o grupo determinar",
+        "Falar o maior número de animas que conseguir em 15 segundos"
     ]
 };
 
@@ -99,7 +113,7 @@ function categoriaPorAngulo(angulo) {
     if (angulo > 120 && angulo <= 180) return "Físico";     
     if (angulo > 180 && angulo <= 240) return "Inteligente";      
     if (angulo > 240 && angulo <= 300) return "Engraçado";   
-    if (angulo > 300 && angulo < 360) return "Físico";
+    if (angulo > 300 && angulo < 360) return "Físico";    
 
     return "Físico";
 }
